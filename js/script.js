@@ -1,36 +1,51 @@
+// Computer choises
 
- let roundNumber = Math.floor(Math.random() * 3 + 1);
- console.log('Твоя цифра: '+ roundNumber);
+let roundNumber = Math.floor(Math.random() * 3 + 1);
+console.log('Згенерований номер: ' + roundNumber);
 
-let computerMove = 'невідомий рух';
-if (roundNumber === 1){
-    computerMove = 'камінь';
+let computerMove = getMoveName(roundNumber);
+printMessage('Рух компютера ' + computerMove);
+
+function getMoveName(argMoveId){
+    if (argMoveId === 1){
+        return 'камінь';
+    }
+    else if (argMoveId === 2){
+        return 'папір';
+    }
+    else if (argMoveId === 3){
+        return 'ножиці';
+    }
+    else{
+        return 'я не знаю такої цифри';
+    }
 }
-else if (roundNumber === 2){
-    computerMove = 'папір';
-}
-else {
-    computerMove = 'ножиці';
-}
 
 
+console.log('Твоя цифра: '+ roundNumber);
+
+//  let computerMove = 'невідомий рух';
 
 printMessage('мій рух :' + computerMove);
+
+
+
+// Player
 
 let playerInput = prompt ('Вибери свій рух! 1 - це камінь, 2 - це папір, 3 - це ножиці');
 console.log('Гравець обрав :' + playerInput);
 
-let playerMove = 'невідомий рух';
-if (playerInput === '1') {
-    playerMove = 'камінь';
-}
-else if (playerInput === '2') {
-    playerMove = 'папір';
-}
+// let playerMove = 'невідомий рух';
+// if (playerInput === '1') {
+//     playerMove = 'камінь';
+// }
+// else if (playerInput === '2') {
+//     playerMove = 'папір';
+// }
 
-else {
-    playerMove = 'ножиці';
-}
+// else {
+//     playerMove = 'ножиці';
+// }
 
 printMessage('твій рух :' + playerMove);
 
