@@ -1,16 +1,11 @@
-let computerMove = 'камінь';
-let playerMove = 'папір';
 
-printMessage('Я обрав ' + computerMove + '! Якщо ти обрав ' + playerMove + ',то ти виграв!');
+ let roundNumber = Math.floor(Math.random() * 3 + 1);
+ console.log('Твоя цифра: '+ roundNumber);
 
-let randomFraction = Math.random();
+let computerMove = 'невідомий рух';
+if (roundNumber === 1){
+    computerMove = 'камінь';
+}
 
-printMessage('Випадково згенероване число: ' + randomFraction);
+printMessage('мій рух :' + computerMove);
 
-let calculation = randomFraction * 3 + 1;
-
-printMessage('Число помножене на 3 та збільшене на 1: ' + calculation);
-
-let roundNumber = Math.floor(Math.random() * 3 + 1);
-
-printMessage('Сума після заокругдення числа до нижчого рівня: ' + roundNumber);
