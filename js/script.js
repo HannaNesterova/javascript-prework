@@ -33,3 +33,19 @@ else {
 }
 
 printMessage('твій рух :' + playerMove);
+
+if( computerMove === 'камінь' && playerMove === 'папір'){
+    printMessage('Вітаю, ти переміг!');
+  }
+  else if( computerMove === 'ножиці' && playerMove === 'камінь'){
+    printMessage('Вітаю, ти переміг!');
+  }
+  else if( computerMove === 'папір' && playerMove === 'ножиці'){
+    printMessage('Вітаю, ти переміг!');
+  }
+  else if( computerMove === 'папір' && playerMove === 'папір' || computerMove === 'ножиці' && playerMove === 'ножиці' || computerMove === 'камінь' && playerMove === 'камінь'){
+    printMessage('Нечія,спробуйте ще раз.');
+  }
+  else{
+    printMessage('Нажаль ти програв,спробуйте ще...');
+  }
