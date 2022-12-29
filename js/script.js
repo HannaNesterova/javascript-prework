@@ -46,6 +46,10 @@ if( computerMove === 'камінь' && playerMove === 'папір'){
   else if( computerMove === 'папір' && playerMove === 'папір' || computerMove === 'ножиці' && playerMove === 'ножиці' || computerMove === 'камінь' && playerMove === 'камінь'){
     printMessage('Нечія,спробуйте ще раз.');
   }
+  else if( playerInput < '1' || playerInput  > '3' ) {
+   alert('Упс,я не знаю такої цифри, обери будь ласка між цифрами 1,2,3!');
+  } 
+  
   else{
     printMessage('Нажаль ти програв,спробуйте ще...');
   }
