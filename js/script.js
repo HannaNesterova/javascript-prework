@@ -52,20 +52,20 @@ displayResult (argComputerMove , argPlayerMove);
 
 }
 
-
 playGame(3);
 
 const playRock = document.querySelector('#play-rock');
 const playPaper = document.querySelector('#play-paper');
 const playScissors = document.querySelector('#play-scissors');
 
-playRock.addEventListener('click', () =>  {
-    printMessage('Твій вибір камінь');
+playRock.addEventListener('click', function () {
+    playGame (1) ;
+    
 });
 playPaper.addEventListener('click', () =>  {
-    printMessage('Твій вибір папір');
+    playGame(2);
 });
 
 playScissors.addEventListener('click', () =>  {
-    printMessage('Твій вибір ножиці');
+    playGame (3)
 });
