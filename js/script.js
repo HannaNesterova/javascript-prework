@@ -26,7 +26,7 @@ printMessage('Рух компютера: ' + computerMove);
 // Player
 
 let playerInput = prompt ('Вибери свій рух! 1 - це камінь, 2 - це папір, 3 - це ножиці');
-let playerMove = getMoveName(playerInput);
+let playerMove = getMoveName(Number(playerInput));
 printMessage('Tвій рух :' + playerMove);
 
 let argComputerMove = computerMove;
