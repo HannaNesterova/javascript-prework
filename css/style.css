@@ -3,4 +3,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLDRDQUFBO0VBQ0EsK0JBQUE7QUNDSiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.container {
+  max-width: 1200px;
+  margin: 0 100px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLDRDQUFBO0VBQ0EsK0JBQUE7QUNDSjs7QURDQTtFQUNJLGlCQUFBO0VBQ0EsZUFBQTtBQ0VKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
