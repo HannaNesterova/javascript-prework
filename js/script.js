@@ -1,5 +1,6 @@
 // Computer choises
 function playGame (playerInput) {
+    clearMessages();
     let roundNumber = Math.floor(Math.random() * 3 + 1);
     let computerMove = getMoveName(roundNumber);
 
