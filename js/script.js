@@ -1,5 +1,6 @@
 // Computer choises
-let roundNumber = Math.floor(Math.random() * 3 + 1);
+function playGame () {
+    let roundNumber = Math.floor(Math.random() * 3 + 1);
 let computerMove = getMoveName(roundNumber);
 
 function getMoveName(argMoveId){
@@ -18,10 +19,7 @@ function getMoveName(argMoveId){
   
 }
 
-
 printMessage('Рух компютера: ' + computerMove);
-
-
 
 // Player
 
@@ -52,4 +50,5 @@ function displayResult (argComputerMove , argPlayerMove){
     }
 }
 displayResult (argComputerMove , argPlayerMove);
-
+}
+playGame();
