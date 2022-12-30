@@ -54,3 +54,18 @@ displayResult (argComputerMove , argPlayerMove);
 
 
 playGame(3);
+
+const playRock = document.querySelector('#play-rock');
+const playPaper = document.querySelector('#play-paper');
+const playScissors = document.querySelector('#play-scissors');
+
+playRock.addEventListener('click', () =>  {
+    printMessage('Твій вибір камінь');
+});
+playPaper.addEventListener('click', () =>  {
+    printMessage('Твій вибір папір');
+});
+
+playScissors.addEventListener('click', () =>  {
+    printMessage('Твій вибір ножиці');
+});
