@@ -1,5 +1,5 @@
 // Computer choises
-function playGame () {
+function playGame (playerInput) {
     let roundNumber = Math.floor(Math.random() * 3 + 1);
     let computerMove = getMoveName(roundNumber);
 
@@ -48,7 +48,7 @@ function playGame () {
         }
 
 displayResult (argComputerMove , argPlayerMove);
-playGame(playerInput);
+
 }
 
 
