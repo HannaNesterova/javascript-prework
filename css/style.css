@@ -2,10 +2,46 @@ body {
   background-color: rgba(253, 255, 135, 0.539);
   font-family: "Lato", sans-serif;
 }
+body h2 {
+  font-size: 35px;
+  text-align: center;
+  color: rgb(56, 20, 20);
+}
+body p {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(58, 58, 20);
+  text-align: center;
+}
+body img {
+  max-height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
 
 .container {
   max-width: 1200px;
   margin: 0 100px;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLDRDQUFBO0VBQ0EsK0JBQUE7QUNDSjs7QURDQTtFQUNJLGlCQUFBO0VBQ0EsZUFBQTtBQ0VKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  margin-left: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+#messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLDRDQUFBO0VBQ0EsK0JBQUE7QUNDSjtBREFJO0VBQ0ksZUFBQTtFQUNBLGtCQUFBO0VBQ0Esc0JBQUE7QUNFUjtBREFJO0VBQ0ksZUFBQTtFQUNBLGlCQUFBO0VBQ0Esc0JBQUE7RUFDQSxrQkFBQTtBQ0VSO0FEQUk7RUFDSSxpQkFBQTtFQUNBLFdBQUE7RUFDUixnQkFBQTtBQ0VBOztBRENBO0VBQ0ksaUJBQUE7RUFDQSxlQUFBO0FDRUo7O0FEQUE7RUFDSSxhQUFBO0VBQ0EsdUJBQUE7QUNHSjs7QUREQTtFQUNJLFlBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLGVBQUE7QUNJSjs7QUREQTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7QUNJSiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

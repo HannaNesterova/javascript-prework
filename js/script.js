@@ -19,13 +19,13 @@ function playGame (playerInput) {
         )
     }
 
-    printMessage('Рух компютера: ' + computerMove);
+    // printMessage('Рух компютера: ' + computerMove);
 
     // Player
 
     // let playerInput = prompt ('Вибери свій рух! 1 - це камінь, 2 - це папір, 3 - це ножиці');
     let playerMove = getMoveName(Number(playerInput));
-    printMessage('Tвій рух :' + playerMove);
+    // printMessage('Tвій рух :' + playerMove);
 
     let argComputerMove = computerMove;
     let argPlayerMove = playerMove;
@@ -47,25 +47,24 @@ function playGame (playerInput) {
             printMessage('Нажаль ти програв,спробуйте ще...');
             }
         }
-
-displayResult (argComputerMove , argPlayerMove);
-
+        displayResult (argComputerMove , argPlayerMove);
+        console.log(playGame);
 }
 
-playGame(3);
+// playGame( );
 
 const playRock = document.querySelector('#play-rock');
 const playPaper = document.querySelector('#play-paper');
 const playScissors = document.querySelector('#play-scissors');
 
-playRock.addEventListener('click', function () {
+playRock?.addEventListener('click', function () {
     playGame (1) ;
-    
 });
-playPaper.addEventListener('click', () =>  {
+
+playPaper?.addEventListener('click', function () {
     playGame(2);
 });
 
-playScissors.addEventListener('click', () =>  {
+playScissors?.addEventListener('click',function () {
     playGame (3)
 });
